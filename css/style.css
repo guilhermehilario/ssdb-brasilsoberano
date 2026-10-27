@@ -851,6 +851,9 @@ body {
 /* Community Contact */
 .community__contact {
     margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .community__contact-item {
