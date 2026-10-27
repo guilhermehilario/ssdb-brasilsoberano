@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDB - Soberania Digital Brasileira</title>
+    <meta name="description" content="SDB - Soberania Digital Brasileira. Uma comunidade desenvolvendo ferramentas open-source para comunicação segura e investigação de corrupção.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇧🇷</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <span class="nav__logo">🇧🇷</span>
+                <span class="nav__title">SDB</span>
+                <span class="nav__subtitle">Soberania Digital Brasileira</span>
+            </div>
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="#sobre" class="nav__link">Sobre</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projetos" class="nav__link">Projetos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#comunidade" class="nav__link">Comunidade</a>
+                </li>
+            </ul>
+            <button class="nav__toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Soberania Digital <span class="hero__title--accent">Brasileira</span>
+                </h1>
+                <p class="hero__subtitle">
+                    Uma comunidade que desenvolve em conjunto ferramentas tecnológicas livres, 
+                    privadas e seguras para fortalecer a soberania digital do Brasil.
+                </p>
+                <p class="hero__description">
+                    Apresentamos soluções para comunicação descentralizada e investigação cidadã contra a corrupção, 
+                    buscando apoio para desenvolvimento e financiamento dessas ferramentas.
+                </p>
+                <div class="hero__actions">
+                    <a href="#projetos" class="btn btn--primary">Conhecer Projetos</a>
+                    <a href="#comunidade" class="btn btn--secondary">Participar</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero__background"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Sobre o SDB</h2>
+                <p class="section__subtitle">
+                    Construindo o futuro digital brasileiro, de forma colaborativa e transparente
+                </p>
+            </div>
+            <div class="about__grid">
+                <div class="about__card">
+                    <div class="about__icon">🤝</div>
+                    <h3 class="about__card-title">Desenvolvimento Coletivo</h3>
+                    <p class="about__card-text">
+                        Projetos desenvolvidos pela comunidade, para a comunidade. 
+                        Sem interesses corporativos, com foco nas necessidades reais dos brasileiros.
+                    </p>
+                </div>
+                <div class="about__card">
+                    <div class="about__icon">🔐</div>
+                    <h3 class="about__card-title">Privacidade em Primeiro Lugar</h3>
+                    <p class="about__card-text">
+                        Ferramentas que respeitam seus dados. Comunicação segura, 
+                        investigação cidadã sem vigilância e total transparência.
+                    </p>
+                </div>
+                <div class="about__card">
+                    <div class="about__icon">🇧🇷</div>
+                    <h3 class="about__card-title">Soberania Tecnológica</h3>
+                    <p class="about__card-text">
+                        Fortalecendo a capacidade brasileira de desenvolver suas próprias 
+                        soluções tecnológicas, livres de dependências externas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projetos" class="section section--dark">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Nossas Ideias</h2>
+                <p class="section__subtitle">
+                    Ferramentas em desenvolvimento pela comunidade SDB
+                </p>
+            </div>
+
+            <!-- CallVortex Project -->
+            <div class="project__card project__card--featured">
+                <div class="project__header">
+                    <div class="project__title-group">
+                        <h3 class="project__name">CallVortex 🎙️💬</h3>
+                        <span class="project__tag project__tag--communication">Comunicação</span>
+                    </div>
+                    <p class="project__tagline">
+                        O seu espaço definitivo para conversar, jogar e rir com amigos, do seu jeito.
+                    </p>
+                </div>
+                
+                <div class="project__content">
+                    <p class="project__description">
+                        Cansado de plataformas pesadas, cheias de distrações ou focadas em empresas? 
+                        Conheça o CallVortex, um aplicativo de chat por texto e voz em tempo real feito sob medida 
+                        para você reunir sua galera com total fluidez, privacidade e zero complicação.
+                    </p>
+                    
+                    <p class="project__tech">
+                        <strong>Tecnologias:</strong> Electron, React, TypeScript e Supabase
+                    </p>
+                    
+                    <div class="project__features">
+                        <h4 class="project__features-title">Principais Funcionalidades</h4>
+                        <div class="features__grid">
+                            <div class="feature__item">
+                                <span class="feature__icon">🎙️</span>
+                                <div class="feature__content">
+                                    <strong>Voz em Tempo Real (WebRTC P2P)</strong>
+                                    <p>Chamadas cristalinas com menor latência possível</p>
+                                </div>
+                            </div>
+                            <div class="feature__item">
+                                <span class="feature__icon">🖥️</span>
+                                <div class="feature__content">
+                                    <strong>Compartilhamento de Tela em HD</strong>
+                                    <p>Ideal para jogar, assistir juntos ou apresentar</p>
+                                </div>
+                            </div>
+                            <div class="feature__item">
+                                <span class="feature__icon">💬</span>
+                                <div class="feature__content">
+                                    <strong>Servidores, Canais e DMs</strong>
+                                    <p>Organização completa para sua comunidade</p>
+                                </div>
+                            </div>
+                            <div class="feature__item">
+                                <span class="feature__icon">🎨</span>
+                                <div class="feature__content">
+                                    <strong>Personalização Expressiva</strong>
+                                    <p>Emojis personalizados, stickers e GIFs</p>
+                                </div>
+                            </div>
+                            <div class="feature__item">
+                                <span class="feature__icon">🔔</span>
+                                <div class="feature__content">
+                                    <strong>Convites Instantâneos</strong>
+                                    <p>Chame amigos com apenas um clique</p>
+                                </div>
+                            </div>
+                            <div class="feature__item">
+                                <span class="feature__icon">🛡️</span>
+                                <div class="feature__content">
+                                    <strong>Privacidade e Segurança Robusta</strong>
+                                    <p>Criptografia moderna e autenticação confiável</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project__highlights">
+                        <div class="highlight__item">
+                            <strong>Leve e Focado:</strong> Sem bloatware ou recursos corporativos desnecessários
+                        </div>
+                        <div class="highlight__item">
+                            <strong>Multiplataforma Desktop:</strong> Aplicativo robusto em Electron com atalhos e notificações nativas
+                        </div>
+                        <div class="highlight__item">
+                            <strong>Open & Modern Stack:</strong> Tecnologias confiáveis e bem estabelecidas
+                        </div>
+                    </div>
+                    
+                    <div class="project__cta">
+                        <p class="project__cta-text">
+                            <strong>CallVortex: A sua voz, o seu vortex.</strong>
+                        </p>
+                        <p>Reúna sua comunidade, entre na chamada e sinta a diferença de conversar sem barreiras.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pente Fino Project -->
+            <div class="project__card">
+                <div class="project__header">
+                    <div class="project__title-group">
+                        <h3 class="project__name">Pente Fino</h3>
+                        <span class="project__tag project__tag--osint">OSINT</span>
+                    </div>
+                    <p class="project__tagline">
+                        Plataforma para investigação de corrupção no Brasil
+                    </p>
+                </div>
+                
+                <div class="project__content">
+                    <p class="project__description">
+                        O Pente Fino é uma plataforma OSINT (Open Source Intelligence) para investigação de corrupção 
+                        no Brasil. Dividido em frontend e backend, oferece ferramentas para mapear conexões entre 
+                        políticos, empresas e contratos suspeitos.
+                    </p>
+                    
+                    <div class="project__architecture">
+                        <h4 class="project__arch-title">Arquitetura do Projeto</h4>
+                        <div class="arch__grid">
+                            <div class="arch__item">
+                                <h5 class="arch__item-title">Frontend - pente-fino/</h5>
+                                <p class="arch__tech">React 19 + TypeScript + Vite + Tailwind CSS</p>
+                                <ul class="arch__features">
+                                    <li>Busca unificada de políticos e empresas</li>
+                                    <li>Dashboard detalhado com alertas</li>
+                                    <li>Mapa de conexões interativo (ForceGraph2D)</li>
+                                    <li>Dashboard de cruzamento de dados</li>
+                                    <li>Busca inteligente com coleta em segundo plano</li>
+                                </ul>
+                            </div>
+                            <div class="arch__item">
+                                <h5 class="arch__item-title">Backend - api-pente-fino/</h5>
+                                <p class="arch__tech">Node.js + Express 5 + Prisma + PostgreSQL</p>
+                                <ul class="arch__features">
+                                    <li>Integração com APIs públicas brasileiras</li>
+                                    <li>Sistema de cache e fallback automático</li>
+                                    <li>Busca inteligente com desambiguação</li>
+                                    <li>Progresso em tempo real via SSE</li>
+                                    <li>Histórico de coletas e cancelamento</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project__data-sources">
+                        <h4 class="project__sources-title">Fontes de Dados Integradas</h4>
+                        <div class="sources__tags">
+                            <span class="source__tag">Brasil API</span>
+                            <span class="source__tag">CNPJA</span>
+                            <span class="source__tag">Câmara dos Deputados</span>
+                            <span class="source__tag">Senado Federal</span>
+                            <span class="source__tag">TSE</span>
+                            <span class="source__tag">Receita Federal</span>
+                            <span class="source__tag">IBGE</span>
+                            <span class="source__tag">BCB</span>
+                            <span class="source__tag">Portal da Transparência</span>
+                            <span class="source__tag">Diário Oficial da União</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project__features">
+                        <h4 class="project__features-title">Funcionalidades Principais</h4>
+                        <div class="features__grid features__grid--compact">
+                            <div class="feature__item feature__item--compact">
+                                <span class="feature__icon">🔍</span>
+                                <span>Busca Inteligente com Coleta em Tempo Real</span>
+                            </div>
+                            <div class="feature__item feature__item--compact">
+                                <span class="feature__icon">🕸️</span>
+                                <span>Grafo Interativo de Conexões</span>
+                            </div>
+                            <div class="feature__item feature__item--compact">
+                                <span class="feature__icon">⚠️</span>
+                                <span>Sistema de Alertas e Suspeitas</span>
+                            </div>
+                            <div class="feature__item feature__item--compact">
+                                <span class="feature__icon">📊</span>
+                                <span>Dashboard de Cruzamento de Dados</span>
+                            </div>
+                            <div class="feature__item feature__item--compact">
+                                <span class="feature__icon">👥</span>
+                                <span>Desambiguação de Homônimos</span>
+                            </div>
+                            <div class="feature__item feature__item--compact">
+                                <span class="feature__icon">📈</span>
+                                <span>Progresso Detalhado por Fonte</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project__goal">
+                        <p>
+                            <strong>Objetivo:</strong> Facilitar a investigação cidadã e o jornalismo investigativo, 
+                            tornando mais acessível o cruzamento de dados públicos para combater a corrupção.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="comunidade" class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Junte-se à Comunidade</h2>
+                <p class="section__subtitle">
+                    Precisamos de apoio para desenvolver e financiar essas ferramentas
+                </p>
+            </div>
+            <div class="community__content">
+                <div class="community__text">
+                    <p class="community__description">
+                        O SDB é um projeto open-source mantido por voluntários. Para tornar essas ferramentas 
+                        realidade e garantir sua manutenção, precisamos do apoio da comunidade brasileira.
+                    </p>
+                    <div class="community__needs">
+                        <h3 class="community__needs-title">Como você pode ajudar:</h3>
+                        <ul class="community__list">
+                            <li>💻 <strong>Desenvolvimento:</strong> Código, design, testes e documentação</li>
+                            <li>💰 <strong>Financiamento:</strong> Doações para infraestrutura e domínio</li>
+                            <li>🔍 <strong>Pesquisa:</strong> Validação de dados e fontes públicas</li>
+                            <li>📢 <strong>Divulgação:</strong> Compartilhe com outros interessados</li>
+                            <li>🤝 <strong>Ideias:</strong> Sugestões e feedback para melhorias</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="community__cta-card">
+                    <h3 class="community__cta-title">Vamos construir juntos</h3>
+                    <p class="community__cta-text">
+                        Se você acredita na soberania digital brasileira e quer contribuir 
+                        para um Brasil mais transparente e livre, entre em contato conosco.
+                    </p>
+                    <div class="community__actions">
+                        <a href="https://github.com/guilhermehilario" class="btn btn--primary" target="_blank" rel="noopener">
+                            GitHub
+                        </a>
+                    </div>
+                    <p class="community__note">
+                        *Repositório: <code>ssdb-brasilsoberano</code> em breve
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <span>🇧🇷</span>
+                        <span>SDB - Soberania Digital Brasileira</span>
+                    </div>
+                    <p class="footer__tagline">
+                        Ferramentas livres para um Brasil mais soberano, privado e transparente.
+                    </p>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__copy">
+                        &copy; 2026 SDB - Soberania Digital Brasileira. 
+                        Projetos desenvolvidos com ❤️ pela comunidade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
