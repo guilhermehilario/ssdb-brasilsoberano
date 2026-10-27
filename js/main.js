@@ -62,6 +62,50 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Lightbox functionality
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxClose = document.getElementById('lightboxClose');
+const lightboxBackdrop = document.querySelector('.lightbox__backdrop');
+const galleryItems = document.querySelectorAll('.gallery__item');
+
+if (lightbox && lightboxImg && galleryItems.length > 0) {
+    galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const src = item.getAttribute('data-src');
+            if (src) {
+                lightboxImg.src = src;
+                lightbox.classList.add('active');
+                lightbox.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+    
+    const closeLightbox = () => {
+        lightbox.classList.remove('active');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = 'auto';
+        setTimeout(() => {
+            lightboxImg.src = '';
+        }, 300);
+    };
+    
+    if (lightboxClose) {
+        lightboxClose.addEventListener('click', closeLightbox);
+    }
+    
+    if (lightboxBackdrop) {
+        lightboxBackdrop.addEventListener('click', closeLightbox);
+    }
+    
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
+}
+
 // Add fade-in animation on scroll
 const observerOptions = {
     threshold: 0.1,
