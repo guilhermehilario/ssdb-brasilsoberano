@@ -1,0 +1,26 @@
+SUGESTÃO DE CARROSSEL PARA INSTAGRAM
+
+Ordem dos slides:
+
+SLIDE 1 - CAPA
+Imagem: Gemini_Generated_Image_netgu3netgu3netg.jpeg
+Texto sobre imagem (opcional): "SDB | Soberania Digital Brasileira"
+
+SLIDE 2 - CALLVORTEX
+Imagem: ../img/callvortex/Captura_de_tela_20261027_172051.png
+Texto: "CALLVORTEX | Chat P2P com voz e vídeo"
+Subtexto: "Electron • React • TypeScript • Supabase"
+
+SLIDE 3 - PENTE FINO
+Imagem: ../img/PenteFino/Captura_de_tela_20261027_172423.png
+Texto: "PENTE FINO | OSINT para combater corrupção"
+Subtexto: "Dados públicos • Mapa de conexões • Investigações cidadãs"
+
+SLIDE 4 - CHAMADA
+Pode criar um slide com fundo escuro (#0f0f0f) e texto:
+"Soberania Digital Brasileira
+Comunicação segura | Investigação cidadã
+Tecnologia livre a serviço do povo
+
+guilhermehilariodev@proton.me
+Link: guilhermehilario.github.io/ssdb-brasilsoberano"
