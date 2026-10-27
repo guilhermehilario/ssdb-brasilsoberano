@@ -853,35 +853,72 @@ body {
     margin-bottom: 1.25rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.75rem;
 }
 
-.community__contact-item {
+.community__contact-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    padding: 0.875rem 1rem;
+    background: linear-gradient(135deg, var(--color-bg-secondary) 0%, var(--color-bg-card) 100%);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--color-text-primary);
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.community__contact-btn:hover {
+    border-color: var(--color-primary);
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, var(--color-bg-card) 100%);
+    transform: translateX(4px);
+    box-shadow: var(--shadow-md);
+}
+
+.community__contact-btn-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    padding: 0.75rem;
-    background: var(--color-bg-secondary);
+    background: var(--color-bg-card);
     border-radius: 8px;
     border: 1px solid var(--color-border);
 }
 
-.community__contact-icon {
-    font-size: 1.25rem;
+.community__contact-btn:hover .community__contact-btn-icon {
+    border-color: var(--color-primary);
 }
 
-.community__contact-link {
-    color: var(--color-primary);
-    text-decoration: none;
+.community__contact-btn-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 0;
+    flex: 1;
+}
+
+.community__contact-btn-label {
+    font-size: 0.75rem;
+    color: var(--color-text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.community__contact-btn-value {
+    font-size: 0.95rem;
+    color: var(--color-text-primary);
     font-weight: 500;
     word-break: break-all;
-    transition: color 0.2s ease;
 }
 
-.community__contact-link:hover {
-    color: var(--color-primary-dark);
-    text-decoration: underline;
+.community__contact-btn:hover .community__contact-btn-value {
+    color: var(--color-primary);
 }
 
 /* Footer */
